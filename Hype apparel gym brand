@@ -1,0 +1,23 @@
+CREATE TABLE Hype_apparel(id integer primary key, name text, quantity Integer, price integer, size text);
+
+
+INSERT INTO Hype_apparel values (1, "wrist wraps", 8, 10.99, "XL");
+INSERT INTO Hype_apparel values (2, "wrist wraps", 1, 10.99, "L");
+INSERT INTO Hype_apparel values (3, "wrist wraps", 12, 10.99, "M");
+INSERT INTO Hype_apparel values (4, "wrist wraps", 8, 10.99, "S");
+INSERT INTO Hype_apparel values (5, "knee sleevs", 20, 57.99, "XL");
+INSERT INTO Hype_apparel values (6, "knee sleevs", 25, 57.99, "L");
+INSERT INTO Hype_apparel values (7, "knee sleevs", 4, 57.99, "M");
+INSERT INTO Hype_apparel values (8, "knee sleevs", 2, 57.99, "S");
+INSERT INTO Hype_apparel values (9, "T-shirt", 75, 23.50, "XL");
+INSERT INTO Hype_apparel values (10, "T-shirt", 53, 23.50, "L");
+INSERT INTO Hype_apparel values (11, "T-shirt", 21, 23.50, "M");
+INSERT INTO Hype_apparel values (12, "T-shirt", 3, 23.50, "S");
+INSERT INTO Hype_apparel values (13, "Lifting belt", 52, 125, "XL");
+INSERT INTO Hype_apparel values (14, "Lifting belt", 9, 125, "L");
+INSERT INTO Hype_apparel values (15, "Lifting belt", 75, 125, "M");
+INSERT INTO Hype_apparel values (16, "Lifting belt", 2, 125, "S");
+
+SELECT * FROM Hype_apparel ORDER BY price;
+
+SELECT size, sum(quantity) FROM Hype_apparel GROUP BY size;
